@@ -1,0 +1,10 @@
+1. npx react-native init MyTestApp
+	=> too create project.
+2. npx react-native doctor
+	=> too installing all packeges.(set environment)
+3. npx react-native start
+	=> too start project.
+4. npx react-native run-android
+	=> too start project in mobile.
+5. npx add react-native-typescript-transformer tslint tslint-config-prettier tslint-react-recommended typescript
+	=> too get suggestion for typescript 
