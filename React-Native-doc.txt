@@ -8,3 +8,9 @@
 	=> too start project in mobile.
 5. npx add react-native-typescript-transformer tslint tslint-config-prettier tslint-react-recommended typescript
 	=> too get suggestion for typescript 
+6. npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+	=> too install gesture 
+7. npm install @react-navigation/native
+	=> too install navigation
+8. npm install @react-navigation/stack
+	=> too install stack(too tack back from side)
