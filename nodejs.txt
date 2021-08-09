@@ -1,0 +1,40 @@
+create new project in TS
+==> https://dev.to/rajat19/create-a-new-node-js-project-in-typescript-nao
+
+mkdir $PROJECT_NAME && cd $PROJECT_NAME
+npm init -y
+npm i --save-dev typescript ts-node nodemon
+npx tsc --init
+
+Adjust tsconfig.json with this
+==>
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true
+  }
+}
+
+Add scripts to package.json
+==>
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm-run-all build:*",
+    "build:lib": "tsc",
+    "build:asset": "cp -R src/templates/ dist/templates",
+    "build:mkdir": "mkdir dist/uploads && mkdir dist/uploads/images  dist/uploads/pdf  dist/uploads/video",
+    "build:ormconfig": "copyfiles -f ormconfig.js  dist/",
+    "seed": "node  --max-old-space-size=8192 dist/services/seeder.js",
+    "watch": "tsc -w",
+    "dev": "nodemon dist/index.js",
+    "start": "node dist/index.js"
+  },
+
+all done now project is created...
+
