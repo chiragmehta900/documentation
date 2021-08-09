@@ -1,7 +1,8 @@
-create new project in TS
+create new project in TS(Typescript)
 ==> https://dev.to/rajat19/create-a-new-node-js-project-in-typescript-nao
 
-mkdir $PROJECT_NAME && cd $PROJECT_NAME
+mkdir $PROJECT_NAME
+cd $PROJECT_NAME
 npm init -y
 npm i --save-dev typescript ts-node nodemon
 npx tsc --init
@@ -36,5 +37,19 @@ Add scripts to package.json
     "start": "node dist/index.js"
   },
 
+Create index.ts
+==>
+console.log('Hello typescript !')
+
+
 all done now project is created...
+
+
+how to start project
+first terminal
+=> npm run watch
+second terminal
+=> npm run dev
+
+your project is start..
 
